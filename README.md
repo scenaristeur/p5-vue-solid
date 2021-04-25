@@ -51,3 +51,12 @@ module.exports = {
 }
 
 ```
+
+add reload in service worker
+
+```
+updated () {
+  console.log('New content is available; please refresh.')
+  alert('New content is available; please close this app & reopen!')
+  },
+  ```
