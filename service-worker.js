@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/p5-vue-solid/precache-manifest.2667b829f40acf7b305f087fc7c0a267.js"
+  "/p5-vue-solid/precache-manifest.772df1a5b8a4715a483eb4e075159735.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "p5-vue-solid"});
