@@ -25,6 +25,7 @@ export default {
     //do something after mounting vue instance
     new P5(radar.main)
     radar.setDelegate(this.callbackOnP5);
+    radar.store = this.$store
   },
   data() {
   return {

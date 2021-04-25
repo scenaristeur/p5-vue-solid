@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    p5testvalue: 12
   },
   mutations: {
   },

@@ -14,6 +14,10 @@ export function main(_p5) {
     var canvas = p5.createCanvas(500, 500)
     canvas.parent("p5Canvas");
     p5.ellipse(p5.width / 2, p5.height / 2, 500, 500);
+
+console.log(this.store)
+
+
   }       // NOTE: Draw is here
   p5.draw = function() {
     p5.background(0);
