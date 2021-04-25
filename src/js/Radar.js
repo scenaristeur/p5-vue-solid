@@ -1,4 +1,6 @@
 let p5;
+let delegate;
+
 export function main(_p5) {
   p5 = _p5
 
@@ -26,11 +28,17 @@ export function main(_p5) {
     if (posX > p5.width || posX < 0) {
       speed *= -1;
     }
+    notifyCurrentTime();
   }
-}    // NOTE: Use p5 as an instance mode
-// const P5 = require('p5');
-// new P5(script)
+}
+export function setDelegate(_delegate) {
+  delegate = _delegate;
+}
 
+function notifyCurrentTime() {
+  if (delegate !== undefined) {
+    const message = p5.hour() + ":" + p5.minute() + ":" + p5.second();
 
-
-//}
+    delegate(message);
+  }
+}
